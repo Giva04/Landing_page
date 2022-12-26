@@ -201,27 +201,34 @@ h3{
     text-align: center; 
 
 }
-
-#button{
+button{
+    position: absolute;
     font-family: Verdana;
     font-size: 42px;    
-    font-weight: 6%px;
+    font-weight: 6%;
     line-height: 51px;
     letter-spacing: 0em;
     text-align: center;
-
-    position: absolute;
+    color: #f3c61f;
     width: 35%;
     height: 17%;
     left: 65%;
     top: 125%;
-    background:#514988;
-    color: #f3c61f;
-    cursor: pointer;
+    background:#514988;   
+    cursor: pointer;   
     border-radius: 20px;
     border: none;
     }
+    /* cria uma sombra para destacar onde o mouse esta */
+    
+    .card-highlight{
+        box-shadow: 10px 10px 10px 10px #514988;
+    }
 
+    .card-selected{
+        border: 5px solid goldenrod;
+    }
+        
 
 
 

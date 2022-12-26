@@ -20,7 +20,7 @@
     <div class="container">
         <div id="reviva">
                 <h1>REVIVA O ÉPICO</h1> 
-            <h4>DE 01 A 04 DE DEZEMBRO</h4>
+            <h4>DE 01 A 25 DE DEZEMBRO</h4>
         
         <p id="convite">
             Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: "estamos em casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. Mas não será qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para visitar seus universos favoritos, explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos nossos corredores.
@@ -56,15 +56,17 @@
         </div>      
         <h3>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h3>
 
-        <div class="ingresso" id="ticket">        
-             <img src="quinta.png" width="200">        
-             <img src="sexta.png" width="200">               
-            <img src="sabado.png" width="200">               
-            <img src="domingo.png" width="200">
+        <div class="card" id="ticket">   
+            <!-- onmouseover(mause entra) onmouseout(mouse sai)      -->
+             <img src="quinta.png" onmouseover="highlightCard('#quinta')" onclick="selectCard" onmouseout="highlightCard('#quinta')"  id="quinta" alt=""   width="180">        
+             <img src="sexta.png" onclick="selectCard"  onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')"  id="sexta" alt=""    width="180">               
+            <img src="sabado.png" onclick="selectCard"  onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="sab"   width="180">               
+            <img src="domingo.png" onclick="selectCard" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')"id="domingo" alt="dom"  width="180">
         </div>           
-    
-     <button id="button" > GARANTA O SEU! </button>
-
+        <div id="compra">
+            <button onclick="showSelectedCards()"> GARANTA O SEU! </button>
+        </div>
     <script src="script.js"></script>
+    <script src="man.js"></script>
 </body>
 </html>
