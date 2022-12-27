@@ -219,6 +219,11 @@ button{
     border-radius: 20px;
     border: none;
     }
+
+    #compra button:hover{ 
+        background-color: #F3C61F;
+        color: #514988;
+    }   
     /* cria uma sombra para destacar onde o mouse esta */
     
     .card-highlight{
