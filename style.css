@@ -92,7 +92,7 @@ p{
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 65px;
     line-height: 85px;
     display: flex;
     align-items: center;
@@ -103,13 +103,13 @@ p{
     position: absolute;
     width: 270px;
     height: 175px;
-    left: 60.5%;
+    left: 63.5%;
     top: 103px;
     color: #514988;
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 65px;
     line-height: 85px;
     display: flex;
     align-items: center;
@@ -119,13 +119,13 @@ p{
     position: absolute;
     width: 273px;
     height: 175px;
-    left: 74%;
+    left: 76%;
     top: 104px;
     color: #514988;
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 65px;
     line-height: 85px;
     display: flex;
     align-items: center;
@@ -135,13 +135,13 @@ p{
     position: absolute;
     width: 239px;
     height: 175px;
-    left: 88%;
+    left: 89.5%;
     top: 103px;
     color: #514988;
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 65px;
     line-height: 85px;
     display: flex;
     align-items: center;
@@ -189,7 +189,7 @@ h3{
     text-align: center;
     }
 
-#ticket{
+.ingressos{
     position: absolute;
     width: 204px;
     height: 204px;

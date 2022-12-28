@@ -3,7 +3,7 @@ const ingressos=[];
 
 //  para chamar ID usar # , para chamar class usar .
 function addRedBorde(id){
-    element = document.querySelector("#" + id );
+    element = document.getElementById("#" + id );
     element.style.border = "5px solid red"
 }
 
@@ -19,12 +19,12 @@ function highlightCard(cardId){
 // função para identificar qual tecla foi pressionada no teclado
 function checkKeyboardCode(){
 
-    document.addEventListener('keydown',(event) => {
+    document.addEventListener('keydown', (event) => {
 
         var name = event.key;
         var code = event.code;
         // alertar o nome da chave e o código da chave n keydown
-        alert(`Tecla Pressionada ${name} \r\n Key code: ${code}`);
+        alert(`Tecla Pressionada ${name} \r\n Key code : ${code}`);
     }, false);
 }
 function addKeyboardEventListeners(){
@@ -56,7 +56,7 @@ function addKeyboardEventListeners(){
             ingresso3.classList.toggle("card-highlight");
             ingresso4.classList.remove("card-highlight");
         }
-        if(code == 'Digit4') {
+        if( code == 'Digit4') {
             ingresso1.classList.remove("card-highlight");
             ingresso2.classList.remove("card-highlight");
             ingresso3.classList.remove("card-highlight");

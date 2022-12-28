@@ -56,13 +56,18 @@
         </div>      
         <h3>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h3>
 
-        <div class="card" id="ticket">   
+        <div class="card"> 
+        <div class="ingressos">   
             <!-- onmouseover(mause entra) onmouseout(mouse sai)      -->
-             <img src="quinta.png" onmouseover="highlightCard('#quinta')" onclick="selectCard" onmouseout="highlightCard('#quinta')"  id="quinta" alt=""   width="180">        
-             <img src="sexta.png" onclick="selectCard"  onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')"  id="sexta" alt=""    width="180">               
-            <img src="sabado.png" onclick="selectCard"  onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="sab"   width="180">               
-            <img src="domingo.png" onclick="selectCard" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')"id="domingo" alt="dom"  width="180">
-        </div>           
+             <img src="quinta.png" class ="card-ingresso" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')"  onmouseout="highlightCard('#quinta')"  id="quinta" alt=""   width="180">        
+
+             <img src="sexta.png" class ="card-ingresso" onclick="selectCard('#sexta')"  onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')"  id="sexta" alt=""    width="180">          
+
+            <img src="sabado.png" class ="card-ingresso" onclick="selectCard('#sabado')"  onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="sab"   width="180">      
+
+            <img src="domingo.png" class ="card-ingresso" onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')"id="domingo" alt="dom"  width="180">
+        </div>   
+        </div>        
         <div id="compra">
             <button onclick="showSelectedCards()"> GARANTA O SEU! </button>
         </div>
