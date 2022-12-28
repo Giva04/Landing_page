@@ -1,16 +1,16 @@
-const ingressos=[];
+const ingressos = [];
 
 
 //  para chamar ID usar # , para chamar class usar .
-function addRedBorde(id){
-    element = document.getElementById("#" + id );
+function addRedBorder(id){
+    element = document.querySelector("#" + id );
     element.style.border = "5px solid red"
 }
 
 
 //  criando uma função de interação na pagina
 function highlightCard(cardId){
-    var element = document.querySelector(cardId);
+    var element = document.getElementById(cardId);
     // toggle e a função que se exite ele coloca se não ele tira
     element.classList.toggle("card-highlight");
 }
