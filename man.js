@@ -3,7 +3,7 @@ const ingressos = [];
 
 //  para chamar ID usar # , para chamar class usar .
 function addRedBorder(id){
-    element = document.querySelector("#" + id );
+    element = document.querySelector(`#${id})`);
     element.style.border = "5px solid red"
 }
 
@@ -19,7 +19,7 @@ function highlightCard(cardId){
 // função para identificar qual tecla foi pressionada no teclado
 function checkKeyboardCode(){
 
-    document.addEventListener('keydown', (event) => {
+    document.addEventListener("keydown", (event) => {
 
         var name = event.key;
         var code = event.code;
@@ -29,7 +29,7 @@ function checkKeyboardCode(){
 }
 function addKeyboardEventListeners(){
  // manipulando keydown
-    document.addEventListener('keydown', (event) => {
+    document.addEventListener("keydown", (event) => {
        
         var ingresso1 = document.getElementById("quinta");
         var ingresso2 = document.getElementById("sexta");
@@ -67,7 +67,7 @@ function addKeyboardEventListeners(){
     false);
 }
   //  selecionado um iten
-    function selectCard(selector) {
+   selectCard = (selector) =>  {
         var element = document.querySelector(selector);
         element.classList.toggle("card-selected");
 
@@ -75,11 +75,11 @@ function addKeyboardEventListeners(){
         else ingressos.push(selector)
     }
 
-    function showSelectedCards(){
+     showSelectedCards = () => {
 
         if(ingressos.lenght > 0) alert("Ingressos Selecionados:" + ingressos);
     }
 
 
-       //checkKeyboardCode();
+      //checkKeyboardCode();
       addKeyboardEventListeners();

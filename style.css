@@ -8,7 +8,7 @@ section{
     background-color:rgba(255, 217, 0, 1);    
     display: grid;
     grid-auto-flow: row;
-    width: 103%;
+    width: 100%;
     height: 19%;
     left: 0px;
     top:0px;
